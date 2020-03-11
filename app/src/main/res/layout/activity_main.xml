@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR ACCOUNT"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_marginBottom="30dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUser"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="2dp"
+        android:visibility="gone"
+        app:civ_border_color="#000000"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUserFix"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="2dp"
+        android:visibility="visible"
+        app:civ_border_color="#000000"/>
+
+    <Button
+        android:id="@+id/buttonChangeImage"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Change Image"
+        android:textSize="10sp"/>
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Upload"
+        android:textSize="10sp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textEmailUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="username@email.com"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
